@@ -617,34 +617,39 @@ input[type="radio"] {
 /* Responsive - for mobile */
 @media (max-width: 768px) {
 
-  body {
-    overflow-x: hidden;
-  }
-
-  /* ===== NAVBAR ===== */
   .nav-container {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
     height: 4.5rem;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
   }
 
   .nav-menu {
     display: flex;
-      flex-direction: row;
+    flex-direction: row;
     gap: 1rem;
-    position: static;
-    background: none;
-    padding: 0;
+    list-style: none;
+  }
+
+  .nav-menu a {
+    font-size: 0.8rem;
   }
 
   #signin-btn {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .logo {
-    height: 3.5rem;
+    height: 3rem;
   }
+}
 
   /* ===== HERO ===== */
   .hero h1 {
