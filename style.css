@@ -725,13 +725,13 @@ input[type="radio"] {
     font-size: 2rem;
   }
   .signin-desktop {
-    display: none;
+      display: none;
   }
 
   .menu-toggle {
-    display: block;
-    color: white;
-    font-size: 1.8rem;
-    cursor: pointer;
+      display: block;
+      color: white;
+      font-size: 1.8rem;
+      cursor: pointer;
   }
 }
