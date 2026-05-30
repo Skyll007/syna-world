@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYNA WORLD</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+   <nav class="navbar">
+
+    <div class="nav-container">
+
+        <div class="nav-left">
+
+            <img class="logo" src="images/sew.webp" alt="SYNA WORLD Logo">
+
+            <ul class="nav-menu">
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#Collabs">Collabs</a></li>
+                <li><a href="#Lookbook">Lookbook</a></li>
+            </ul>
+
+        </div>
+
+        <a href="#" id="signin-btn">
+    SIGN IN
+</a>
+
+    </div>
+
+</nav>
+
+
+<div id="signin-modal" class="modal">
+  <div class="modal-content">
+
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2>Account Access</h2>
+
+    <input id="username" placeholder="Username">
+    <input id="email" placeholder="Email">
+
+    <p id="error" class="error">Please fill all fields correctly</p>
+
+    <button onclick="saveUser()">Continue</button>
+
+  </div>
+</div>
+
+    <section class="hero">
+
+
+        <div class="hero-content">
+            <h1>SYNA WORLD</h1>
+            <p>LIFE OF SYN</p>
+            <a href="#shop" class="btn">SHOP THE DROP</a>
+        </div>
+    </section>
+
+    <!-- SHOP -->
+    <section id="shop" class="shop-section">
+        <h2 class="shop-title">SHOP</h2>
+
+        <input type="radio" name="filter" id="all" checked>
+        <input type="radio" name="filter" id="hoodies">
+        <input type="radio" name="filter" id="caps">
+        <input type="radio" name="filter" id="shirts">
+
+<div class="filters">
+    <label for="all">All</label>
+    <label for="hoodies">Hoodies</label>
+    <label for="caps">Caps</label>
+    <label for="shirts">T-Shirts</label>
+</div>   
+
+                <div class="products">
+                    <div class="product hoodies">
+                        <img src="images/Tops1.webp" alt="">
+                        <h3>OG 2.0 HOOD - BURGUNDY</h3>
+                        <p>£120</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                    </div>
+
+                        <div class="product caps">
+                        <img src="images/GREYSKULL1-cap.webp" alt="">
+                        <h3>PASSPORT HOOD - BURGUNDY</h3>
+                        <p>£75</p>
+                    </div>
+
+                <div class="product hoodies">
+                        <img src="images/Tops4-hood.webp" alt="">
+                        <h3>PASSPORT HOOD - NAVY</h3>
+                        <p>£129</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                    </div>
+
+                        <div class="product shirts">
+                        <img src="images/SYNAEMBTEEBLACKPINK-tshirt.webp" alt="">
+                        <h3>CORE EMBROIDERED T-SHIRT - BLACK/PINK</h3>
+                        <p>£95</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                    </div>
+                     <div class="product caps">
+                        <img src="images/hat2.webp" alt="">
+                        <h3>OG SYNA SKULL - BLACK</h3>
+                        <p>£20</p>
+                    </div>
+                     <div class="product hoodies">
+                        <img src="images/hoodie2.webp" alt="">
+                        <h3>OG HOODIE 2.0 - GREY MARL</h3>
+                        <p>£115</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                    </div>
+                         <div class="product hoodies">
+                        <img src="images/hoodie3.webp" alt="">
+                        <h3>OG HOODIE 2.0 - NAVY</h3>
+                        <p>£115</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                    </div>
+
+                      <div class="product shirts">
+                        <img src="images/tshirt2.webp" alt="">
+                        <h3>PERFORATED PERFORMANCE TEE (OVERSIZED) - BLACK/RED</h3>
+                        <p>£50</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                      </div>
+
+                  <div class="product hoodies">
+                        <img src="images/hoodie4.webp" alt="">
+                        <h3>TRIPLE HALO S HOOD - BLACK</h3>
+                        <p>£50</p>
+                        <div class="product-details">
+
+                        <p>Premium Streetwear</p>
+
+                        <p>Sizes: S M L XL</p>
+
+                          </div>
+                    </div>
+    </section>
+
+    <!---collabs-->
+    <section id="Collabs" class="collabs-section">
+
+    <h2 class="section-title">COLLABS</h2>
+
+    <div class="collabs-container">
+
+        <div class="collab-card">
+            <img src="images/synasiitt.jpg">
+            <h3>SYNA x NIKE</h3>
+        </div>
+
+        <div class="collab-card">
+            <img src="images/synabape.jpg">
+            <h3>SYNA x BAPE</h3>
+        </div>
+         <div class="collab-card">
+            <img src="images/image.jpg">
+            <h3>SYNA x G-SHOCK</h3>
+        </div>
+
+    </div>
+
+</section>
+
+<!----lookbook-->
+<section id="Lookbook" class="lookbook">
+
+    <div class="lookbook-item item1">
+        <h2>SUMMER DROP</h2>
+        <p>STREET LUXURY</p>
+    </div>
+
+    <div class="lookbook-item item2">
+        <h2>NIGHT EDITION</h2>
+        <p>SYNA WORLD</p>
+    </div>
+
+    <div class="lookbook-item item3">
+        <h2>WINTER 2026</h2>
+        <p>LIMITED COLLECTION</p>
+    </div>
+
+</section>
+
+
+
+
+
+
+<!------FOOTER---->
+<footer class="footer">
+
+    <h2>SYNA WORLD</h2>
+
+    <p class="footer-text">
+        LONDON STREET LUXURY
+    </p>
+
+    <div class="socials">
+
+        <a href="https://instagram.com/synaworld">INSTAGRAM</a>
+        <a href="#">TIKTOK</a>
+        <a href="#">YOUTUBE</a>
+
+    </div>
+
+    <p class="copyright">
+        © 2026 SYNA WORLD
+    </p>
+</footer>
+
+<script src="script.js"></script>
+   </body>
+    </html>
