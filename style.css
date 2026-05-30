@@ -419,9 +419,7 @@ input[type="radio"] {
     align-items: center;
     justify-content: center;
 
-    text-align: center;
     overflow: hidden;
-    background-attachment: fixed;
 }
 
 .hero::before {
