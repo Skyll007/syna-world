@@ -676,12 +676,11 @@ input[type="radio"] {
   .logo {
     height: 3rem;
   }
-}
 
-  /* ===== HERO ===== */
-.hero {
+  .hero {
     background-attachment: scroll;
   }
+
   .hero h1 {
     font-size: 2.5rem;
     letter-spacing: 0.2rem;
@@ -696,7 +695,6 @@ input[type="radio"] {
     font-size: 0.9rem;
   }
 
-  /* ===== SHOP / PRODUCTS ===== */
   .products {
     flex-direction: column;
     align-items: center;
@@ -710,20 +708,18 @@ input[type="radio"] {
     height: 14rem;
   }
 
-  /* ===== COLLABS ===== */
   .collab-card {
     width: 90%;
   }
 
-  /* ===== LOOKBOOK ===== */
   .lookbook-item h2 {
     font-size: 2rem;
   }
 
-  /* ===== FOOTER ===== */
   .footer h2 {
     font-size: 2rem;
   }
+
   .signin-desktop {
       display: none;
   }
@@ -734,4 +730,3 @@ input[type="radio"] {
       font-size: 1.8rem;
       cursor: pointer;
   }
-}
