@@ -2,41 +2,79 @@ console.log("JS WORKING");
 
 window.addEventListener("DOMContentLoaded", function () {
 
-  let signInBtn = document.getElementById("signin-btn");
-  let modal = document.getElementById("signin-modal");
+  // =========================
+  // SIGN IN MODAL
+  // =========================
 
-  console.log("BTN =", signInBtn); // 👈 مهم جداً
+  const signInBtn = document.getElementById("signin-btn");
+  const modal = document.getElementById("signin-modal");
 
-  if (!signInBtn || !modal) {
-    console.log("ELEMENTS NOT FOUND");
-    return;
+  if (signInBtn && modal) {
+
+    signInBtn.addEventListener("click", function (e) {
+      e.preventDefault();
+      modal.classList.add("show");
+    });
+
+    window.addEventListener("click", function (e) {
+      if (e.target === modal) {
+        modal.classList.remove("show");
+      }
+    });
+
+  } else {
+    console.log("Modal elements not found");
   }
 
-  signInBtn.addEventListener("click", function(e){
-    e.preventDefault();
-    console.log("clicked");
-    modal.classList.add("show");
-  });
 
-  window.addEventListener("click", function(e){
-    if (e.target === modal) {
-      modal.classList.remove("show");
-    }
-  });
+  // =========================
+  // HAMBURGER MENU (☰)
+  // =========================
+
+  const toggle = document.querySelector(".menu-toggle");
+  const menu = document.querySelector(".dropdown-menu");
+
+  if (toggle && menu) {
+
+    toggle.addEventListener("click", function () {
+      menu.classList.toggle("show");
+    });
+
+    // إغلاق القائمة عند الضغط خارجها
+    window.addEventListener("click", function (e) {
+      if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+        menu.classList.remove("show");
+      }
+    });
+
+  } else {
+    console.log("Menu elements not found");
+  }
 
 });
-function closeModal(){
+
+
+// =========================
+// MODAL FUNCTIONS
+// =========================
+
+function closeModal() {
   document.getElementById("signin-modal").classList.remove("show");
 }
 
-function saveUser(){
-  let username = document.getElementById("username").value.trim();
-  let email = document.getElementById("email").value.trim();
-  let error = document.getElementById("error");
-  let btn = document.getElementById("signin-btn");
 
-  // validation 
-  if(username === "" || email === "" || !email.includes("@")){
+// =========================
+// SAVE USER (LOCAL STORAGE)
+// =========================
+
+function saveUser() {
+
+  const username = document.getElementById("username").value.trim();
+  const email = document.getElementById("email").value.trim();
+  const error = document.getElementById("error");
+  const btn = document.getElementById("signin-btn");
+
+  if (username === "" ||  email === "" || !email.includes("@")) {
     error.style.display = "block";
     return;
   }
@@ -50,10 +88,3 @@ function saveUser(){
 
   closeModal();
 }
-let toggle = document.querySelector(".menu-toggle");
-let menu = document.querySelector(".dropdown-menu");
-
-if (toggle && menu) {
-  toggle.addEventListener("click", function () {
-    menu.classList.toggle("show");
-  });}
