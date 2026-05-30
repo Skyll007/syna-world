@@ -615,6 +615,13 @@ input[type="radio"] {
   font-size: 0.8rem;
   display: none;
 }
+.signin-wrapper {
+    display: flex;
+    align-items: center;
+}
+.menu-toggle {
+    display: none;
+}
 
 /* Responsive - for mobile */
 @media (max-width: 768px) {
@@ -698,5 +705,15 @@ input[type="radio"] {
   /* ===== FOOTER ===== */
   .footer h2 {
     font-size: 2rem;
+  }
+  .signin-desktop {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
   }
 }
