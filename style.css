@@ -642,7 +642,7 @@ input[type="radio"] {
     text-decoration: none;
 }
 /* Responsive - for mobile */
-@media (max-width: 768px) {
+@media (max-width: 500px) {
 
   .nav-container {
     display: flex;
