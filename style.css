@@ -624,12 +624,23 @@ input[type="radio"] {
 }
 .dropdown-menu {
     display: none;
+    position: absolute;
+    top: 5rem;
+    right: 1rem;
+    background: #111;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .dropdown-menu.show {
     display: flex;
 }
 
+.dropdown-menu a {
+    color: white;
+    text-decoration: none;
+}
 /* Responsive - for mobile */
 @media (max-width: 768px) {
 
