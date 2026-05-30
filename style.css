@@ -409,8 +409,12 @@ input[type="radio"] {
 .hero {
     position: relative;
     height: 100vh;
-    background: url('images/seert.jpg');
+
+    background-image: url('images/seert.jpg');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     display: flex;
     align-items: center;
     justify-content: center;
