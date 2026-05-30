@@ -631,6 +631,11 @@ input[type="radio"] {
 
   .nav-menu {
     display: flex;
+      flex-direction: row;
+    gap: 1rem;
+    position: static;
+    background: none;
+    padding: 0;
   }
 
   #signin-btn {
