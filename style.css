@@ -622,6 +622,13 @@ input[type="radio"] {
 .menu-toggle {
     display: none;
 }
+.dropdown-menu {
+    display: none;
+}
+
+.dropdown-menu.show {
+    display: flex;
+}
 
 /* Responsive - for mobile */
 @media (max-width: 768px) {
