@@ -50,3 +50,10 @@ function saveUser(){
 
   closeModal();
 }
+let toggle = document.querySelector(".menu-toggle");
+let menu = document.querySelector(".dropdown-menu");
+
+if (toggle && menu) {
+  toggle.addEventListener("click", function () {
+    menu.classList.toggle("show");
+  });}
