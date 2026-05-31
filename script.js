@@ -65,12 +65,8 @@ function saveUser() {
   localStorage.setItem("username", username);
   localStorage.setItem("email", email);
 
-if (desktopBtn) {
-    desktopBtn.innerText = username;
-  }
-
-  if (mobileBtn) {
-    mobileBtn.innerText = username;
+if (btn) {
+    btn.innerText = username;
   }
 
   closeModal();
