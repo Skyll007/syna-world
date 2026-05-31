@@ -642,7 +642,7 @@ input[type="radio"] {
     text-decoration: none;
 }
 /* Responsive - for mobile */
-@media (max-width: 500px) {
+@media (max-width: 768px) {
 
   .nav-container {
     display: flex;
@@ -730,3 +730,4 @@ input[type="radio"] {
       font-size: 1.8rem;
       cursor: pointer;
   }
+}
